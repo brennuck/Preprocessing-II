@@ -180,7 +180,6 @@ img {
 .navigation-bar {
   display: flex;
   justify-content: center;
-  width: 100%;
   border-bottom: 2px dashed lightgrey;
   align-items: baseline;
   margin-top: 20px;
@@ -194,6 +193,11 @@ img {
 h1 {
   margin-right: 400px;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .navigation-bar {
+    display: flex;
+  }
 }
 .footer {
   width: 100%;
@@ -257,4 +261,69 @@ h1 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  h1 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .navigation-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation-bar nav a {
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .welcome {
+    margin: 0 20px 0 20px;
+  }
+}
+@media (max-width: 500px) {
+  .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-section p {
+    width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    margin: 30px 20px;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 63px;
+  }
+  .content-pick p {
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick h4 {
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 350px;
+  }
 }
