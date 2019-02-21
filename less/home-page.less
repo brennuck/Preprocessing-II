@@ -1,5 +1,13 @@
 .home {
 
+  .welcome {
+    border-bottom: 2px dashed lightgrey;
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -41,6 +49,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    
 
     img {
       border-radius: 10px;
@@ -59,3 +68,73 @@
     }
   }
 }// home
+@media @mobile {
+  h1 {
+    margin-right: 0;
+  }
+}
+@media @mobile {
+  .navigation-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    nav a {
+      font-size: 20px;
+      margin: 0 20px 0 20px;
+      align-items: center;
+    }
+  }
+}
+
+@media @mobile {
+  .welcome {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media @mobile {
+  .content-section {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      width: 450px;
+    }
+  }
+}
+@media @mobile {
+  .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media @mobile {
+  .home .content-section {
+    margin: 30px 20px;
+  }
+}
+@media @mobile {
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 63px;
+
+    p {
+      width: 350px;
+    }
+  }
+}
+@media @mobile {
+  .content-pick h4 {
+    width: 350px;
+  }
+}
+@media @mobile {
+  .btn {
+    width: 350px;
+  }
+}
